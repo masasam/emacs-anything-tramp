@@ -61,7 +61,7 @@
   (find-file path))
 
 (defvar anything-tramp-hosts
-  '((name . "hosts")
+  '((name . "Tramp")
     (candidates . (lambda () (anything-tramp--candidates)))
     (type . file)
     (action . (("Tramp" . anything-tramp-open)))))

@@ -5,7 +5,7 @@
 ;; Author: masasam
 ;; URL: https://github.com/masasam/emacs-anything-tramp
 ;; Version: 0.01
-;; Package-Requires: ((anything "1") (emacs "24"))
+;; Package-Requires: ((anything "1.0") (emacs "24"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by

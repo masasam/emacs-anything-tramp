@@ -71,6 +71,8 @@
   "Open your ~/.ssh/config with anything interface.
 You can connect your server with tramp"
   (interactive)
+  (unless (file-exists-p "~/.ssh/config")
+    (error "There is no ~/.ssh/config"))
   (anything-other-buffer
    '(anything-tramp-hosts)
    "*anything-tramp*"))

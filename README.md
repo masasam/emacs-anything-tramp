@@ -1,4 +1,4 @@
-# anything-tramp
+# anything-tramp [![melpa badge][melpa-badge]][melpa-link]
 
 Tramp with anything interface
 
@@ -38,10 +38,15 @@ Since I can not remember `tramp-cleanup-all-buffers` command I set a defalias ca
 
 ## Installation
 
-
+You can install `anything-tramp.el` from [MELPA](http://melpa.org) with package.el
+(`M-x package-install anything-tramp`).
 
 ## Sample Configuration
 
 	(setq tramp-default-method "ssh")
     (defalias 'exit-tramp 'tramp-cleanup-all-buffers)
     (define-key global-map (kbd "C-c s") 'anything-tramp)
+
+
+[melpa-link]: http://melpa.org/#/anything-tramp
+[melpa-badge]: http://melpa.org/packages/anything-tramp-badge.svg

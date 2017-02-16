@@ -47,6 +47,9 @@ You can install `anything-tramp.el` from [MELPA](http://melpa.org) with package.
     (defalias 'exit-tramp 'tramp-cleanup-all-buffers)
     (define-key global-map (kbd "C-c s") 'anything-tramp)
 
+If the shell of the server is zsh it is recommended to connect with bash.  
+
+    (eval-after-load 'tramp '(setenv "SHELL" "/bin/bash"))
 
 [melpa-link]: http://melpa.org/#/anything-tramp
 [melpa-badge]: http://melpa.org/packages/anything-tramp-badge.svg

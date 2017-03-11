@@ -1,4 +1,4 @@
-# anything-tramp [![melpa badge][melpa-badge]][melpa-link]
+# anything-tramp [![melpa badge][melpa-badge]][melpa-link] [![melpa stable badge][melpa-stable-badge]][melpa-stable-link]
 
 Tramp with anything interface
 
@@ -53,3 +53,5 @@ If the shell of the server is zsh it is recommended to connect with bash.
 
 [melpa-link]: http://melpa.org/#/anything-tramp
 [melpa-badge]: http://melpa.org/packages/anything-tramp-badge.svg
+[melpa-stable-link]: http://stable.melpa.org/#/anything-tramp
+[melpa-stable-badge]: http://stable.melpa.org/packages/anything-tramp-badge.svg

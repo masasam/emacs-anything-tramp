@@ -8,7 +8,7 @@ Tramp with anything interface
 
 ![anything-tramp1](image/image1.png)
 
-Display server list from your ~/.ssh/config in anything interface  
+Display server list from your ~/.ssh/config with anything interface  
 
 ![anything-tramp2](image/image2.png)
 
@@ -33,7 +33,7 @@ Since I can not remember `tramp-cleanup-all-buffers` command I set a defalias ca
 
 ## Requirements
 
-- Emacs 24 or higher
+- Emacs 24.3 or higher
 - anything 1.0 or higher
 
 ## Installation

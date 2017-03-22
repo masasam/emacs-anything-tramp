@@ -26,6 +26,14 @@ Selecting the list with sudo will lead to the server as root
 
 You can edit your server's nginx.conf on your emacs!  
 
+![docker-tramp](image/docker-tramp.png)
+
+If you are using [docker-tramp](https://github.com/emacs-pe/docker-tramp.el), docker is also supplemented
+
+![docker-tramp1](image/docker-tramp1.png)
+
+You can edit docker container on your emacs!
+
 ![anything-exit](image/exit.png)
 
 When you finish editing nginx.conf you clean the tramp buffer with `tramp-cleanup-all-buffers` command.  

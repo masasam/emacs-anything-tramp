@@ -4,4 +4,5 @@
 (package-file "anything-tramp.el")
 
 (development
- (depends-on "anything"))
+ (depends-on "anything")
+ (depends-on "docker-tramp"))

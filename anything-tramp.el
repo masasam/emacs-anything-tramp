@@ -4,7 +4,7 @@
 
 ;; Author: Masashi Miyaura
 ;; URL: https://github.com/masasam/emacs-anything-tramp
-;; Version: 0.3.1
+;; Version: 0.3.2
 ;; Package-Requires: ((emacs "24.3") (anything "1.0"))
 
 ;; This program is free software; you can redistribute it and/or modify

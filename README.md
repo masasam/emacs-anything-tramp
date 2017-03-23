@@ -4,7 +4,7 @@ Tramp with anything interface
 
 ## Screenshot
 
-    M-x anything-tramp  
+    M-x anything-tramp
 
 ![anything-tramp1](image/image1.png)
 
@@ -58,6 +58,10 @@ You can install `anything-tramp.el` from [MELPA](http://melpa.org) with package.
 If the shell of the server is zsh it is recommended to connect with bash.  
 
     (eval-after-load 'tramp '(setenv "SHELL" "/bin/bash"))
+
+If you want to specify the user name to connect with docker-tramp  
+
+	(setq anything-tramp-docker-user "username")
 
 [melpa-link]: http://melpa.org/#/anything-tramp
 [melpa-badge]: http://melpa.org/packages/anything-tramp-badge.svg

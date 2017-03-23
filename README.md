@@ -47,7 +47,9 @@ Since I can not remember `tramp-cleanup-all-buffers` command I set a defalias ca
 ## Installation
 
 You can install `anything-tramp.el` from [MELPA](http://melpa.org) with package.el
-(`M-x package-install anything-tramp`).
+(`M-x package-install anything-tramp`).  
+You can install `docker-tramp.el` from [MELPA](http://melpa.org) with package.el
+(`M-x package-install docker-tramp`).  
 
 ## Sample Configuration
 

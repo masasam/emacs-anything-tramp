@@ -1,4 +1,4 @@
-;;; anything-tramp.el --- Tramp with anything interface -*- lexical-binding: t; -*-
+;;; anything-tramp.el --- Tramp with anything for server and docker -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2017 by Masashi Miyaura
 
@@ -33,7 +33,7 @@
 (require 'cl-lib)
 
 (defgroup anything-tramp nil
-  "tramp with anything interface"
+  "Tramp with anything for server and docker"
   :group 'anything)
 
 (defcustom anything-tramp-docker-user nil

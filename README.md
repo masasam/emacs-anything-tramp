@@ -1,6 +1,6 @@
 # anything-tramp [![melpa badge][melpa-badge]][melpa-link] [![melpa stable badge][melpa-stable-badge]][melpa-stable-link]
 
-Tramp with anything interface for server and docker
+Tramp with anything for server and docker
 
 ## Screenshot
 

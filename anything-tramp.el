@@ -62,7 +62,7 @@
 	   (concat "/ssh:" host "|sudo:" host ":/")
 	   hosts))))
     (when (featurep 'docker-tramp)
-      (cl-loop for line in (cdr (ignore-errors (apply #'process-lines "docker" (list "container" "ls"))))
+      (cl-loop for line in (cdr (ignore-errors (apply #'process-lines "docker" (list "ps"))))
 	       for info = (split-string line "[[:space:]]+" t)
 	       collect (progn (push
 			       (concat "/docker:" (car info) ":/")

@@ -38,6 +38,7 @@
 
 (defcustom anything-tramp-docker-user nil
   "If you want to use login user name when docker-tramp used, set variable."
+  :group 'anything-tramp
   :type 'string)
 
 (defun anything-tramp--candidates ()

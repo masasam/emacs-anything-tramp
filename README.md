@@ -2,7 +2,9 @@
 
 Tramp with anything for server and docker
 
-## Screenshot
+## Screencast
+
+![anything-tramp-gif](image/anything-tramp.gif)
 
     M-x anything-tramp
 

@@ -24,6 +24,8 @@ You can connect your server with tramp.
 
 Selecting the list with sudo will lead to the server as root.
 
+Selecting the list of '/sudo:root@localhost:/' will open file at localhost as root.
+
 ![anything-tramp5](image/image5.png)
 
 You can edit your server's nginx.conf on your emacs!.

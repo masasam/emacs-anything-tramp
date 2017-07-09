@@ -5,4 +5,5 @@
 
 (development
  (depends-on "anything")
- (depends-on "docker-tramp"))
+ (depends-on "docker-tramp")
+ (depends-on "vagrant-tramp"))

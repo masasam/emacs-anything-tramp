@@ -76,6 +76,10 @@ If you want to specify the user name to connect with docker-tramp.
 
 	(setq anything-tramp-docker-user "username")
 
+If you want to specify multiple user name list to connect with docker-tramp.
+
+	(setq anything-tramp-docker-user '("username1" "username2" "username3" "username4"))
+
 [melpa-link]: http://melpa.org/#/anything-tramp
 [melpa-badge]: http://melpa.org/packages/anything-tramp-badge.svg
 [melpa-stable-link]: http://stable.melpa.org/#/anything-tramp

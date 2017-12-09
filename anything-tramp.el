@@ -4,7 +4,7 @@
 
 ;; Author: Masashı Mıyaura
 ;; URL: https://github.com/masasam/emacs-anything-tramp
-;; Version: 0.6.4
+;; Version: 0.6.5
 ;; Package-Requires: ((emacs "24.3") (anything "1.0"))
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -59,7 +59,7 @@
 	    (replace-match "" t t host))
         (unless (string= host "*")
           (push
-	   (concat "/" tramp-default-method ":" host ":/")
+	   (concat "/" tramp-default-method ":" host ":")
 	   hosts)
 	  (push
 	   (concat "/ssh:" host "|sudo:" host ":/")

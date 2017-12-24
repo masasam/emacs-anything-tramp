@@ -92,6 +92,10 @@ If you want to specify multiple user name list to connect with docker-tramp.
 
 	(setq anything-tramp-docker-user '("username1" "username2" "username3" "username4"))
 
+If you want to change initial directory when connecting with /sudo:root@localhost:.
+
+	(setq anything-tramp-localhost-directory "/root")
+
 [melpa-link]: http://melpa.org/#/anything-tramp
 [melpa-badge]: http://melpa.org/packages/anything-tramp-badge.svg
 [melpa-stable-link]: http://stable.melpa.org/#/anything-tramp

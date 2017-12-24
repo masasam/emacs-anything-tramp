@@ -40,11 +40,9 @@ If you are using [vagrant-tramp](https://github.com/dougm/vagrant-tramp), vagran
 
 You can edit docker container on your emacs!
 
-![anything-exit](image/exit.png)
+	counsel-tramp-quit
 
-When you finish editing nginx.conf you clean the tramp buffer with `tramp-cleanup-all-buffers` command.
-
-Since I can not remember `tramp-cleanup-all-buffers` command I set a defalias called `exit-tramp`.
+When you finish editing nginx.conf you clean the tramp buffer with `anything-tramp-quit` command.
 
 ## Requirements
 
@@ -65,8 +63,22 @@ You can install `vagrant-tramp.el` from [MELPA](http://melpa.org) with package.e
 ## Sample Configuration
 
 	(setq tramp-default-method "ssh")
-    (defalias 'exit-tramp 'tramp-cleanup-all-buffers)
     (define-key global-map (kbd "C-c s") 'anything-tramp)
+
+## If you want to speed up tramp
+
+	(add-hook 'anything-tramp-pre-command-hook '(lambda () (global-aggressive-indent-mode 0)
+					     (projectile-mode 0)
+					     (editorconfig-mode 0)))
+	(add-hook 'anything-tramp-quit-hook '(lambda () (global-aggressive-indent-mode 1)
+				      (projectile-mode 1)
+				      (editorconfig-mode 1)))
+
+Setting hook that turn off slow extensions when you execute anything-tramp.
+
+Setting hook that turn on extensions when you execute `anything-tramp-quit` command.
+
+## Misc setting
 
 If the shell of the server is zsh it is recommended to connect with bash.
 

@@ -4,7 +4,7 @@
 
 ;; Author: Masashı Mıyaura
 ;; URL: https://github.com/masasam/emacs-anything-tramp
-;; Version: 0.7.5
+;; Version: 0.8.5
 ;; Package-Requires: ((emacs "24.3") (anything "1.0"))
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -38,9 +38,36 @@
   :group 'anything)
 
 (defcustom anything-tramp-docker-user nil
-  "If you want to use login user name when docker-tramp used, set variable."
+  "If you want to use login user name when `docker-tramp' used, set variable."
   :group 'anything-tramp
   :type 'string)
+
+(defcustom anything-tramp-localhost-directory "/"
+  "Initial directory when connecting with /sudo:root@localhost:."
+  :group 'anything-tramp
+  :type 'string)
+
+(defcustom anything-tramp-pre-command-hook nil
+  "Hook run before `anything-tramp'.
+The hook is called with one argument that is non-nil."
+  :type 'hook)
+
+(defcustom anything-tramp-post-command-hook nil
+  "Hook run after `anything-tramp'.
+The hook is called with one argument that is non-nil."
+  :type 'hook)
+
+(defcustom anything-tramp-quit-hook nil
+  "Hook run when `anything-tramp-quit'.
+The hook is called with one argument that is non-nil."
+  :type 'hook)
+
+(defun anything-tramp-quit ()
+  "Quit anything-tramp.
+Kill all remote buffers."
+  (interactive)
+  (run-hooks 'anything-tramp-quit-hook)
+  (tramp-cleanup-all-buffers))
 
 (defun anything-tramp--candidates ()
   "Collect candidates for anything-tramp."
@@ -86,7 +113,7 @@
                do (progn
                     (push (concat "/vagrant:" box-name ":/") hosts)
                     (push (concat "/vagrant:" box-name "|sudo:" box-name ":/") hosts))))
-    (push "/sudo:root@localhost:/" hosts)
+    (push (concat "/sudo:root@localhost:" anything-tramp-localhost-directory) hosts)
     (reverse hosts)))
 
 (defun anything-tramp-open (path)
@@ -112,9 +139,11 @@ You can connect your server with tramp"
   (when (package-installed-p 'vagrant-tramp)
     (unless (executable-find "vagrant")
       (error "'vagrant' is not installed")))
+  (run-hooks 'anything-tramp-pre-command-hook)
   (anything-other-buffer
    '(anything-tramp-hosts)
-   "*anything-tramp*"))
+   "*anything-tramp*")
+  (run-hooks 'anything-tramp-post-command-hook))
 
 (provide 'anything-tramp)
 

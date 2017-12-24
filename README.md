@@ -40,7 +40,7 @@ If you are using [vagrant-tramp](https://github.com/dougm/vagrant-tramp), vagran
 
 You can edit docker container on your emacs!
 
-	counsel-tramp-quit
+	anything-tramp-quit
 
 When you finish editing nginx.conf you clean the tramp buffer with `anything-tramp-quit` command.
 

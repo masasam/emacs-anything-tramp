@@ -8,7 +8,7 @@ The reason for having been unsupported now is written [here](https://github.com/
 
 Therefore I recommend you are going to install [helm-tramp](https://github.com/masasam/emacs-helm-tramp) or [counsel-tramp](https://github.com/masasam/emacs-counsel-tramp).
 
-# anything-tramp [![melpa badge][melpa-badge]][melpa-link] [![melpa stable badge][melpa-stable-badge]][melpa-stable-link]
+# anything-tramp
 
 Tramp with anything for ssh server and docker and vagrant
 
@@ -113,7 +113,3 @@ If you want to change initial directory when connecting with /sudo:root@localhos
 
 	(setq anything-tramp-localhost-directory "/root")
 
-[melpa-link]: http://melpa.org/#/anything-tramp
-[melpa-badge]: http://melpa.org/packages/anything-tramp-badge.svg
-[melpa-stable-link]: http://stable.melpa.org/#/anything-tramp
-[melpa-stable-badge]: http://stable.melpa.org/packages/anything-tramp-badge.svg

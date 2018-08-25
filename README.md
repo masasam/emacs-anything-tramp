@@ -61,8 +61,8 @@ When you finish editing nginx.conf you clean the tramp buffer with `anything-tra
 
 ## Installation
 
-You can install `anything-tramp.el` from [MELPA](http://melpa.org) with package.el
-(`M-x package-install anything-tramp`).
+~~You can install `anything-tramp.el` from [MELPA](http://melpa.org) with package.el~~
+~~(`M-x package-install anything-tramp`).~~
 
 You can install `docker-tramp.el` from [MELPA](http://melpa.org) with package.el
 (`M-x package-install docker-tramp`).

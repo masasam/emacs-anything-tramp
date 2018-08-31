@@ -8,7 +8,7 @@ The reason for having been unsupported now is written [here](https://github.com/
 
 Therefore I recommend you are going to install [helm-tramp](https://github.com/masasam/emacs-helm-tramp) or [counsel-tramp](https://github.com/masasam/emacs-counsel-tramp).
 
-# anything-tramp
+# anything-tramp [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 Tramp with anything for ssh server and docker and vagrant
 
